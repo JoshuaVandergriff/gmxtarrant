@@ -29,9 +29,11 @@
     <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="navlist">Menu</button>
     <ul id="navlist">
       <li><a href="trails/index.html">Trail Guides</a></li>
+      <li><a href="camping.html">Camping</a></li>
       <li><a href="gear.html">Gear</a></li>
-      <li><a href="events.html">Events</a></li>
       <li><a href="index.html#about">About</a></li>
+      <li><a href="media-designs.html">Media + Designs</a></li>
+      <li><a href="work-with-us.html">Work With Us</a></li>
       <li><a href="index.html#shop" class="navshop">Shop</a></li>
     </ul>
   </div>
@@ -64,8 +66,10 @@
        The moment you're accepted into Amazon Associates and put a single Amazon link on this page,
        Amazon REQUIRES this exact sentence, word for word, above the first link:
            As an Amazon Associate, I earn from qualifying purchases.
-       It's already written into the paragraph below but commented out. Delete the
-       <!-- and --> around that line to turn it on. Don't turn it on before you're accepted.
+       It's already written into the paragraph below but switched off. Find the line
+       further down that starts with the word "As an Amazon Associate" and strip the
+       comment markers off both ends of it to turn it on. Don't turn it on before
+       you're accepted.
 
        ALSO: the a.co links on this page are plain share links right now — they earn nothing.
        Once you're an Associate, regenerate each one from Amazon's SiteStripe bar so it carries
@@ -81,6 +85,25 @@
 </div>
 
 <div class="gearsec">
+
+  <!-- [EDIT] TWO HALVES OF THE PAGE
+       Everything from here to "THE CAMP" below is truck and trailer.
+       Everything after it is camping gear. To move an item between halves,
+       cut its whole <div class="gitem"> block and paste it under a heading
+       on the other side. Nothing else needs changing. -->
+
+  <div class="gjump">
+    <span class="lbl">Jump To</span>
+    <a href="#rig">The Rig</a>
+    <a href="#camp">The Camp</a>
+  </div>
+
+  <div class="gpart" id="rig">
+    <div class="k">Part One</div>
+    <h2 class="pt">The Rig</h2>
+    <p>The Bronco, the trailer, and the camera gear bolted to both. If it goes down
+    the trail attached to something with wheels, it's in this half.</p>
+  </div>
 
   <h2>Exterior</h2>
   <div class="sub">What's bolted to the outside of DA_GRN_M4CHINE.</div>
@@ -272,6 +295,14 @@
         </div>
         <a class="buy" href="https://rbptires.com/tire/repulsor-xt-rx/" target="_blank" rel="noopener nofollow">Where to Get It</a>
       </div>
+  </div>
+
+  <div class="gpart" id="camp">
+    <div class="k">Part Two</div>
+    <h2 class="pt">The Camp</h2>
+    <p>Everything that comes out of the trailer once we've stopped driving &mdash;
+    shelter, sleeping, cooking, and the stuff that makes a tent feel like somewhere
+    two kids will actually go to sleep.</p>
   </div>
 
   <h2>Shelter</h2>
@@ -478,6 +509,15 @@
       <div>&copy; <span id="yr">2026</span> GMxTARRANT. All rights reserved.</div>
       <div><a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> &nbsp;&middot;&nbsp;
         <a href="index.html#shop">Shop</a> &nbsp;&middot;&nbsp; <a href="index.html#follow">Follow</a></div>
+    </div>
+
+    <div class="flegal">
+      <!-- [EDIT] These two pages belong to the Cadence app, not to this website.
+           They are labelled that way on purpose so nobody reads them as the
+           site's own policy. Leave the wording alone unless the app changes. -->
+      <span>Cadence app</span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
     </div>
   </div>
 </footer>

@@ -24,13 +24,17 @@
   nav .brand .txt{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:23px;letter-spacing:.05em;text-transform:uppercase;color:var(--cream);line-height:1}
   nav .brand .txt .x{color:var(--gold)}
   @media(max-width:420px){nav .brand .txt{display:none}}
-  nav ul{display:flex;gap:25px;list-style:none;align-items:center}
+  /* [EDIT] gap tightened from 25px to 19px when Media & Designs became a 7th
+     nav item — at 25px the row wrapped onto two lines and broke the bar. */
+  nav ul{display:flex;gap:19px;list-style:none;align-items:center;white-space:nowrap}
   nav ul a{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.11em;font-size:14.5px;font-weight:600;color:var(--creamdim);text-decoration:none;transition:color .15s}
   nav ul a:hover,nav ul a:focus-visible{color:var(--cream)}
   nav .navshop{background:var(--gold);color:#16241B !important;padding:8px 16px;border-radius:3px}
   nav .navshop:hover{background:var(--gold-hi)}
   .menubtn{display:none;background:none;border:1px solid var(--line);color:var(--cream);border-radius:3px;padding:7px 12px;font-size:13px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;letter-spacing:.1em;text-transform:uppercase}
-  @media(max-width:860px){
+  /* [EDIT] collapse point raised from 860px to 1100px for the same reason —
+     seven items need the room. Below this the Menu button takes over. */
+  @media(max-width:1100px){
     nav ul{display:none;position:absolute;top:66px;left:0;right:0;background:var(--forest);flex-direction:column;gap:0;padding:8px 0;border-bottom:3px solid var(--gold)}
     nav ul.open{display:flex}
     nav ul li{width:100%}
@@ -41,14 +45,21 @@
   /* ---------- HERO ---------- */
   .hero{position:relative;background:var(--night)}
   .hero .banner{position:relative;line-height:0}
-  .hero .banner img{width:100%;height:auto}
+  /* [EDIT] HOW TALL THE TOP BANNER IS
+       The badge art is 16:9, so at full browser width it used to be about
+       half the screen tall on its own. The line below caps it.
+       Want it shorter? lower the 500px. Taller? raise it.
+       "center 34%" is which part of the badge stays centred as it crops --
+       lower number keeps more of the top (sky), higher keeps more bottom. */
+  .hero .banner img{width:100%;height:auto;display:block;
+    max-height:min(52vh,460px);object-fit:cover;object-position:center 34%}
   /* blends the bottom of your badge art into the page */
   .hero .banner::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:26%;
     background:linear-gradient(180deg,rgba(22,36,27,0),var(--night))}
-  .hero .inner{position:relative;max-width:var(--max);margin:0 auto;padding:14px 24px 84px;text-align:center}
-  .hero h1{font-size:clamp(28px,4.4vw,44px);font-weight:700;max-width:20ch;margin:0 auto}
-  .hero p{margin:20px auto 0;font-size:clamp(16px,1.9vw,18.5px);max-width:58ch;color:var(--creamdim)}
-  .btnrow{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px;justify-content:center}
+  .hero .inner{position:relative;max-width:var(--max);margin:0 auto;padding:6px 24px 58px;text-align:center}
+  .hero h1{font-size:clamp(28px,4.4vw,44px);font-weight:700;max-width:26ch;margin:0 auto}
+  .hero p{margin:16px auto 0;font-size:clamp(16px,1.9vw,18.5px);max-width:58ch;color:var(--creamdim)}
+  .btnrow{display:flex;gap:13px;flex-wrap:wrap;margin-top:26px;justify-content:center}
   .btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.11em;font-weight:600;font-size:15.5px;
     padding:13px 28px;border-radius:3px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:.15s}
   .btn-p{background:var(--gold);color:#16241B;border-color:var(--gold)}
@@ -160,6 +171,14 @@
   footer a{color:var(--creamdim)}
   footer a:hover{color:var(--cream)}
   footer .frow{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:28px;padding-top:22px;border-top:1px solid var(--line);font-size:13px}
+  /* [EDIT] the small Cadence-app legal line under the footer */
+  footer .flegal{display:flex;align-items:center;gap:8px 14px;flex-wrap:wrap;
+    margin-top:16px;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    letter-spacing:.16em;font-size:11.5px;color:var(--sage-txt)}
+  footer .flegal span{color:var(--sage-txt);opacity:.8}
+  footer .flegal a{color:var(--sage-txt);text-decoration:none;
+    border-bottom:1px solid rgba(156,171,124,.35);padding-bottom:1px}
+  footer .flegal a:hover{color:var(--gold);border-bottom-color:var(--gold)}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
   :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
@@ -300,6 +319,27 @@
   .gearsec{max-width:900px;margin:0 auto;padding:0 24px}
   .gearsec h2{font-size:clamp(25px,4vw,35px);margin:52px 0 6px;color:var(--cream)}
   .gearsec .sub{font-size:15px;color:var(--sage-txt);margin-bottom:24px;max-width:60ch}
+
+  /* ---------- GEAR PAGE: THE RIG / THE CAMP SPLIT ---------- */
+  /* [EDIT] the two big dividers that separate truck gear from camping gear */
+  .gjump{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:34px 0 4px}
+  .gjump .lbl{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    letter-spacing:.16em;font-size:12px;color:var(--sage-txt)}
+  .gjump a{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    letter-spacing:.11em;font-size:14px;font-weight:600;text-decoration:none;
+    color:var(--cream);border:1px solid var(--line);border-radius:3px;
+    padding:7px 16px;transition:.15s}
+  .gjump a:hover{border-color:var(--gold);color:var(--gold)}
+
+  .gpart{margin:56px 0 8px;padding:26px 0 22px;border-top:2px solid var(--gold);
+    border-bottom:1px solid var(--line)}
+  .gpart:first-of-type{margin-top:30px}
+  .gpart .k{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;
+    letter-spacing:.2em;font-size:12.5px;color:var(--gold);margin-bottom:6px}
+  .gpart h2.pt{font-size:clamp(30px,5.4vw,44px);margin:0 0 10px;color:var(--cream)}
+  .gpart p{font-size:15.4px;color:var(--creamdim);margin:0;max-width:62ch}
+  /* first section heading after a divider shouldn't double up on space */
+  .gpart + h2{margin-top:34px}
   .gearlist{display:grid;gap:14px}
   .gitem{background:var(--forest2);border:1px solid var(--line);border-radius:9px;padding:20px 22px;
     display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start}
@@ -355,3 +395,137 @@
   .gitem.feature .gpic{width:100%;height:auto;display:block;border-bottom:1px solid var(--line)}
   .gitem.feature .gbody{padding:20px 22px 22px}
   .gitem.feature .gbody .buy{display:inline-block;margin-top:14px;align-self:auto}
+
+  /* ---------- DISABLED / COMING-SOON BUTTON ---------- */
+  .btn-off{background:transparent;color:var(--sage-txt);border:2px dashed var(--line);
+    cursor:default;display:inline-flex;align-items:center;gap:9px}
+  .btn-off svg{width:17px;height:17px;opacity:.7}
+  .btn-off:hover{background:transparent;border-color:var(--line)}
+
+  /* ---------- CAMPING PAGE ---------- */
+  .camplist{display:grid;gap:20px;margin-top:8px}
+  .camp{background:var(--forest2);border:1px solid var(--line);border-radius:10px;padding:24px 26px}
+  .camp h3{font-size:24px;color:var(--cream);margin:0 0 4px;letter-spacing:.03em}
+  .camp .where{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em;
+    font-size:12px;color:var(--gold);font-weight:600;margin-bottom:12px}
+  .camp p{font-size:15.5px;color:var(--creamdim);margin-bottom:14px;max-width:66ch}
+  .camp p:last-child{margin-bottom:0}
+  .sites{background:var(--night);border-left:3px solid var(--gold);border-radius:0 7px 7px 0;padding:15px 18px;margin-top:6px}
+  .sites .k{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.16em;
+    font-size:11.5px;color:var(--gold);font-weight:600;margin-bottom:7px}
+  .sites .nums{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:700;color:var(--cream);
+    letter-spacing:.05em;line-height:1.35;margin-bottom:8px}
+  .sites p{font-size:14.3px;margin:0;color:var(--creamdim)}
+
+  /* ---------- INVITE / RECOMMEND CALLOUT ---------- */
+  .invite{border:1px solid var(--gold);border-radius:11px;padding:32px 34px;margin:44px 0 0;
+    background:radial-gradient(60% 100% at 20% 0%, rgba(140,154,110,.14) 0%, transparent 70%), var(--forest2)}
+  .invite h2{font-size:clamp(24px,3.6vw,32px);margin-bottom:10px}
+  .invite p{max-width:58ch}
+
+  /* ---------- BUCKET LIST ---------- */
+  .bucket{background:var(--forest2);border:1px solid var(--line);border-radius:9px;padding:24px 26px;margin-top:22px}
+  .bucket h3{font-size:17px;letter-spacing:.08em;margin-bottom:6px;color:var(--cream)}
+  .bucket .lead{font-size:14px;color:var(--sage-txt);margin-bottom:16px}
+  .bucket ul{list-style:none;margin:0;padding:0}
+  .bucket li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+    padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--cream)}
+  .bucket li:last-of-type{border-bottom:none}
+  .bucket li .yr{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;
+    letter-spacing:.08em;color:var(--gold);white-space:nowrap}
+  .bucket .join{margin-top:18px;padding-top:16px;border-top:1px solid var(--gold);font-size:14.6px;color:var(--creamdim)}
+  .bucket .join a{color:var(--gold)}
+
+  /* ---------- WORK WITH US FORM PAGE ---------- */
+  .wwu{max-width:760px;margin:0 auto;padding:52px 24px 20px}
+  .wwu .intro p{font-size:17.5px;max-width:none}
+  .wwucard{background:var(--forest2);border:1px solid var(--line);border-radius:11px;padding:30px 32px;margin-top:30px}
+  /* [EDIT] numbered steps — used on the Media & Designs page */
+  ol.steps{list-style:none;counter-reset:s;padding:0;margin:0}
+  ol.steps li{counter-increment:s;position:relative;padding-left:48px;margin-bottom:20px;
+    color:var(--creamdim);font-size:15.6px}
+  ol.steps li:last-child{margin-bottom:0}
+  ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:1px;
+    font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;
+    letter-spacing:.08em;color:var(--gold)}
+  .who{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:26px 0 6px}
+  .who .w{background:var(--forest2);border:1px solid var(--line);border-radius:9px;padding:19px 21px}
+  .who .w .k{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em;
+    font-size:11.5px;color:var(--gold);font-weight:600;margin-bottom:6px}
+  .who .w p{font-size:14.4px;color:var(--creamdim);margin:0}
+
+  /* ================================================================
+     GMx MEDIA + DESIGNS — PAGE SKIN
+     ================================================================
+     [EDIT] This block only applies to pages whose <body> tag carries
+     class="gmx". Right now that is media-designs.html and nothing else.
+     Every other page on the site is untouched by it.
+
+     How it works: the whole site is painted from the colour variables
+     at the very top of this file (--night, --cream, --gold and so on).
+     Re-stating those variables here swaps the paint on that one page
+     without changing a single component. Forest green becomes the
+     GMx near-black and copper.
+
+     The GMx palette (from the identity pack in
+     Projects/gmxtarrant-media/brand/gmx-identity-v3):
+       Copper          #C49267   the brand surface
+       Antimatter      #0D1821   dark ground
+       Antimatter deep #070F17   recessed panels, text on copper
+       Bone            #F2EEE6   body text on dark
+       Flake           #2D3C5D   rules and secondary surfaces
+
+     Do not put copper text on a copper ground, and do not set the GMx
+     name in any face other than the logo artwork.
+     ================================================================ */
+  body.gmx{
+    --night:#0D1821;        /* page ground            was #16241B */
+    --forest:#152130;       /* raised band            was #1E3226 */
+    --forest2:#1A2838;      /* cards and the form     was #243B2C */
+    --cream:#F2EEE6;        /* headings, bold text    was #F0EADA */
+    --creamdim:#CEC9C1;     /* body copy              was #CFC8B4 */
+    --sage:#7C8CAB;         /* success border only    was #8C9A6E */
+    --sage-txt:#AFBACE;     /* small muted type       was #9CAB7C */
+    --gold:#C49267;         /* copper                 was #C4A268 */
+    --gold-hi:#D7AC84;      /* copper, hover          was #D6B87E */
+    --line:rgba(242,238,230,.14);
+  }
+  /* The handful of places the stylesheet names a colour outright
+     instead of using a variable. Each one is the green equivalent of
+     the GMx colour beside it. */
+  body.gmx nav{background:rgba(13,24,33,.96)}
+  body.gmx footer{background:#070F17}
+  body.gmx nav .navshop{color:#070F17 !important}
+  body.gmx .btn-p{color:#070F17}
+  body.gmx .field input::placeholder,
+  body.gmx .field textarea::placeholder{color:#7E8699}
+  body.gmx .formmsg.ok{background:rgba(124,140,171,.18)}
+  body.gmx .callout.warn{border-color:rgba(196,146,103,.5)}
+
+  /* The page header. No photograph behind it — the logo and the angled
+     panels carry it. The panel artwork itself lives in media-designs.html,
+     drawn as an SVG; this just places it. */
+  .gmxhead{background:var(--night);border-bottom:2px solid var(--gold);
+    padding:52px 0 48px}
+  /* The panels hug the LEFT edge and are as tall as the header. Because the
+     width is "auto", the artwork keeps its own proportions instead of being
+     stretched, so the diagonals hold their angle at every screen size. */
+  .gmxhead .gmxpanels{position:absolute;right:0;top:0;height:100%;width:auto;
+    pointer-events:none;user-select:none}
+  .gmxhead h1.gmxlock{margin:22px 0 18px;line-height:0}
+  .gmxhead h1.gmxlock img{display:block;width:100%;max-width:400px;height:auto}
+  .gmxhead .lede{color:var(--cream)}
+  @media(max-width:860px){
+    .gmxhead{padding:40px 0 40px}
+    .gmxhead h1.gmxlock{margin:18px 0 16px}
+    .gmxhead h1.gmxlock img{max-width:300px}
+  }
+  @media(max-width:640px){
+    /* [EDIT] On a phone the lower wedge would run straight through the
+       sentence under the logo, so it is switched off and only the
+       top-right corner and the copper stripe remain. */
+    .gmxhead .gmxpanels .gmxlower{display:none}
+  }
+  @media(max-width:520px){
+    .gmxhead h1.gmxlock img{max-width:244px}
+  }

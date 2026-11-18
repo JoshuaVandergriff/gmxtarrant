@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GMx Media + Designs — Websites &amp; Branding, Jackson MI</title>
+<meta name="description" content="Websites, social media and branding for small businesses and clubs. Based in Jackson, Michigan, working in and out of state. See it before you commit.">
+<meta property="og:title" content="GMx Media + Designs">
+<meta property="og:description" content="Websites, social media and branding for small businesses and clubs, in Michigan and out of state. You see it before you commit to anything.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gmxtarrant.com/media-designs.html">
+<meta property="og:image" content="https://gmxtarrant.com/image/gmx/gmx-facebook-banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0D1821">
+<!-- [EDIT] This page gets the GMx tab icon (the copper x), not the
+     overland badge the rest of the site uses. Deliberate. -->
+<link rel="icon" href="image/gmx/gmx-favicon.svg" type="image/svg+xml">
+<link rel="icon" href="image/gmx/gmx-favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="image/gmx/gmx-favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<!-- [EDIT] class="gmx" is what repaints this page in the Media + Designs
+     colours — near-black, bone and copper instead of the overland forest
+     green. The rules live at the bottom of style.css under
+     "GMx MEDIA + DESIGNS — PAGE SKIN". Remove the class and this page
+     goes back to looking like the rest of the site. -->
+<body class="gmx">
+<a href="#main" class="sr">Skip to content</a>
+<nav>
+  <div class="inner">
+    <a href="index.html" class="brand">
+      <img src="image/badge-mark.png" alt="GMxTARRANT Family Overland">
+      <span class="txt">GM<span class="x">x</span>TARRANT</span>
+    </a>
+    <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="navlist">Menu</button>
+    <ul id="navlist">
+      <li><a href="trails/index.html">Trail Guides</a></li>
+      <li><a href="camping.html">Camping</a></li>
+      <li><a href="gear.html">Gear</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="media-designs.html">Media + Designs</a></li>
+      <li><a href="work-with-us.html">Work With Us</a></li>
+      <li><a href="index.html#shop" class="navshop">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ================================================================
+     [EDIT] THE HERO
+     The angled navy panels and the copper stripe are drawn right here as
+     an SVG rather than loaded as a picture, so they stay razor sharp on
+     any screen and cost nothing to download.
+     The shape is anchored to the LEFT edge and scales with the height of
+     the header, so the angles stay the same from a phone to a wide
+     monitor instead of squashing flat.
+     To change the colours, edit the stop-color values below. To change
+     the angles, edit the "points" numbers — they are measured on a
+     700 wide by 440 tall grid, counted from the top-left corner, as
+     x,y pairs going around the shape.
+     ================================================================ -->
+<div class="pagehead gmxhead">
+  <svg class="gmxpanels" viewBox="0 0 700 440" preserveAspectRatio="xMidYMid meet"
+       aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gmxp1" x1="1" y1="0" x2="0.1" y2="1">
+        <stop offset="0" stop-color="#17375F"/><stop offset="1" stop-color="#0E2340"/>
+      </linearGradient>
+      <linearGradient id="gmxp2" x1="1" y1="1" x2="0" y2="0.2">
+        <stop offset="0" stop-color="#122F4F"/><stop offset="1" stop-color="#0B1E35"/>
+      </linearGradient>
+    </defs>
+    <polygon points="700,0 400,0 700,136" fill="url(#gmxp1)"/>
+    <polygon class="gmxlower" points="700,272 370,440 700,440" fill="url(#gmxp2)"/>
+    <polygon points="448,26 443,26 651,120 656,120" fill="#C49267"/>
+  </svg>
+  <div class="inner">
+    <a class="backlink" href="index.html">&larr; Home</a>
+    <!-- [EDIT] The logo IS the heading here, which is why there is no
+         "GMx Media + Designs" in text underneath it — it would read twice.
+         The alt text carries the name for Google and for screen readers.
+         Artwork: image/gmx/gmx-lockup-hero.svg — the copper GM / blue x
+         version. The plain pack lockup is still beside it as
+         image/gmx/gmx-lockup.svg if you ever want to swap back.
+         It is vector, so it stays sharp at any size; the width is capped in
+         style.css, not here. The background is transparent on purpose, so
+         it sits on whatever colour is behind it. The full identity pack,
+         including versions for light backgrounds and for print, is in
+         Projects/gmxtarrant-media/brand/gmx-identity-v3. -->
+    <h1 class="gmxlock"><img src="image/gmx/gmx-lockup-hero.svg" width="252" height="121"
+      alt="GMx Media + Designs"></h1>
+    <p class="lede" style="margin-top:14px">Websites, social media and branding for small
+    businesses and clubs. Based in Jackson, Michigan; not limited to it. One person, answers
+    his own phone.</p>
+  </div>
+</div>
+
+<div class="wwu">
+
+  <div class="intro">
+    <!-- [EDIT] This page is written as "I", not "we". The rest of the site is Josh
+         and Kyla together; this is the shop side and it's one person. Deliberate. -->
+    <p>I build websites for small businesses and clubs that don't have one &mdash; and fix the
+    ones that stopped getting updated in 2012.</p>
+    <p>Most of the shops, contractors, restaurants and clubs I talk to are busy being good at
+    the thing they actually do. The website is the part nobody got to. That's fair. It's also costing
+    them work, because everybody under fifty checks a phone before they call.</p>
+    <p><strong style="color:var(--cream)">GMx Media + Designs is the shop side of GMxTARRANT
+    &mdash; same person, same outfit, same email.</strong> If you got here from the overland
+    side of this site, that's why the name changed.</p>
+  </div>
+
+  <div class="gpart" style="margin-top:46px">
+    <div class="k">How This Works</div>
+    <h2 class="pt">You See It Before You Commit</h2>
+    <p>Nobody should have to imagine what they're buying.</p>
+  </div>
+
+  <div class="callout" style="margin-top:26px">
+    <div class="k">Where To Start</div>
+    <p style="margin-bottom:12px">Tell me about your business and I'll show you what it could
+    look like &mdash; before you commit to anything. No meeting to sit through, no proposal to
+    read, nothing to sign to find out whether we're a fit.</p>
+    <p style="margin:0">I'd rather show you than describe it. If what I put in front of you
+    isn't right, you say so and we're done, no hard feelings.</p>
+  </div>
+
+  <div class="gpart" style="margin-top:52px">
+    <div class="k">What I Do</div>
+    <h2 class="pt">Three Things</h2>
+    <p>You're hiring a person, not an agency. My name, my number, my email &mdash; not a ticket
+    number, not an account manager who changes every six months, not a support queue where you
+    explain your own business from scratch every time you call.</p>
+  </div>
+
+  <div class="who" style="grid-template-columns:1fr;gap:18px;margin-top:26px">
+    <div class="w">
+      <div class="k">Small Business Websites</div>
+      <p style="margin-bottom:12px">A real website, built to work on a phone first. Menus people
+      can read, forms that actually reach you, photos of the work you've done. Built for
+      businesses and clubs that have nothing, or something that hasn't been touched in a
+      decade.</p>
+      <p style="margin-bottom:12px">Hand-written, so there's no WordPress underneath it and
+      nothing that needs patching every few weeks just to keep working.</p>
+      <p style="margin-bottom:12px">Hosting is handled &mdash; at the traffic a local business
+      actually gets, it costs nothing to run, and I set it up in your name so it stays that way.</p>
+      <p style="margin-bottom:12px"><strong style="color:var(--cream)">And it doesn't go
+      stale.</strong> New hours, a new menu, a price change, a photo of the job you finished last
+      week &mdash; send me a message and it's on the site in a day or two. Weekly, if that's what
+      your business needs. You're not filing a ticket and waiting a month to fix a typo.</p>
+      <p style="margin:0">You own the files, the domain and the accounts. Nothing is locked to me
+      &mdash; if you ever want somebody else to take it over, they can.</p>
+    </div>
+
+    <div class="w">
+      <div class="k">Social Media Management</div>
+      <p style="margin:0">Posting, replies and monthly content for businesses and clubs that
+      know they should be on Facebook and Instagram but never find the hour. You keep doing the work
+      &mdash; I make sure people see it.</p>
+    </div>
+
+    <div class="w">
+      <div class="k">Logos, Branding &amp; Print</div>
+      <p style="margin:0">Logos, menus, signage, business cards, truck lettering, club patches
+      and decals. The stuff that
+      has to look like it belongs to the same business as everything else. Built as real vector
+      art at the size it's getting cut or printed &mdash; and in a version that still reads at
+      profile-picture size, because a mark that turns to mush when it's small isn't finished.</p>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:34px">
+    <div class="k">Three Things I Find On Almost Every Local Site</div>
+    <p style="margin-bottom:10px"><strong style="color:var(--cream)">It was built for a desktop
+    computer.</strong> Most of the people looking at it are on a phone, turning it sideways,
+    giving up.</p>
+    <p style="margin-bottom:10px"><strong style="color:var(--cream)">There's no way to reach you
+    but a phone number.</strong> Plenty of people will send a message at 9pm who will never make
+    a call at 9am. That's a lost job you never knew existed.</p>
+    <p style="margin:0"><strong style="color:var(--cream)">The menu or price list is inside a
+    photo.</strong> Google can't read a photo, and nobody can forward one to their spouse and
+    have it be useful.</p>
+  </div>
+
+  <div class="gpart" style="margin-top:52px">
+    <div class="k">Where</div>
+    <h2 class="pt">Jackson Is Home. It Isn't The Limit.</h2>
+    <p>Businesses and clubs, in Michigan and well outside it.</p>
+  </div>
+
+  <div class="callout" style="margin-top:26px">
+    <div class="k">In Person</div>
+    <p style="margin-bottom:12px">I'm in Jackson County. If you're in Jackson, Brooklyn, Spring
+    Arbor, Eaton Rapids, Grass Lake, Napoleon, Michigan Center or Concord, I can come stand in
+    your shop and look at the thing you're trying to describe to me.</p>
+    <p style="margin:0"><strong style="color:var(--cream)">Everywhere else is the same job over
+    a screen.</strong> Most of this work is messages, email and the odd phone call no matter who
+    you are &mdash; and that doesn't change whether you're ten minutes away or three states over.
+    Michigan, out of state, or a club with members scattered across four of them: same work,
+    same me.</p>
+  </div>
+
+  <div class="gpart" style="margin-top:52px">
+    <div class="k">How It Goes</div>
+    <h2 class="pt">Three Steps</h2>
+    <p>No discovery calls, no proposals with stock photos in them.</p>
+  </div>
+
+  <ol class="steps" style="margin-top:24px;max-width:none">
+    <li><strong style="color:var(--cream)">You tell me what you've got.</strong> Use the form
+    below, or just say "we don't have a website." That's enough to start from.</li>
+    <li><strong style="color:var(--cream)">I show you what it could look like.</strong> You
+    look at it on your phone before anything is agreed. If it's not right, you say so.</li>
+    <li><strong style="color:var(--cream)">If you like it, we talk price.</strong> One number,
+    not a range that mysteriously grows. If it's not something I should be doing, I'll say so
+    and point you somewhere better.</li>
+  </ol>
+
+  <div class="callout warn" style="margin-top:38px">
+    <div class="k">Being Straight With You</div>
+    <p style="margin-bottom:12px">This is not my full-time job. I work days, I've got two young
+    kids, and I take on a small number of projects at a time so the ones I do take actually get
+    finished. If I'm booked up I'll say so rather than string you along.</p>
+    <p style="margin:0">I'm also not the right call for everything. Online stores with hundreds
+    of products, anything needing logins and user accounts, apps &mdash; that's somebody else's
+    job and I'll tell you that too.</p>
+  </div>
+
+  <!-- ================================================================
+       [EDIT] TURN THE FORM ON — about 2 minutes, free.
+         1. Go to web3forms.com
+         2. Enter gmxtarrant@gmail.com and create
+         3. They email you an access key
+         4. Replace PASTE_YOUR_WEB3FORMS_KEY_HERE below with that key
+       Use the SAME key as index.html and work-with-us.html — one key covers
+       every form on the site. The subject line is different on this one so
+       Media + Designs inquiries are easy to spot in your inbox.
+       Until the key is in, the form tells people to email you instead of
+       failing quietly.
+       ================================================================ -->
+  <div class="wwucard" style="margin-top:40px">
+    <div class="eyebrow">Start Here</div>
+    <h2 style="font-size:clamp(24px,3.6vw,32px);margin-bottom:10px">Tell Me What You've Got</h2>
+    <p style="color:var(--creamdim);margin-bottom:6px">Rough is fine. The more you tell me, the
+    closer the first thing I send will be.</p>
+
+    <form id="mdForm" novalidate style="margin-top:22px">
+      <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
+      <input type="hidden" name="subject" value="New GMx Media + Designs inquiry from gmxtarrant.com">
+      <input type="hidden" name="from_name" value="GMx Media + Designs">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+      <div class="fieldrow">
+        <div class="field">
+          <label for="m-name">Name <span class="req">*</span></label>
+          <input id="m-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="m-email">Email <span class="req">*</span></label>
+          <input id="m-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+        </div>
+      </div>
+
+      <div class="fieldrow">
+        <div class="field">
+          <label for="m-co">Business Or Club Name</label>
+          <input id="m-co" name="company" type="text" placeholder="Optional">
+        </div>
+        <div class="field">
+          <label for="m-topic">What Do You Need?</label>
+          <select id="m-topic" name="topic">
+            <option>A website &mdash; we don't have one</option>
+            <option>Replacing a site that's out of date</option>
+            <option>Social media posting and replies</option>
+            <option>A logo or rebrand</option>
+            <option>Menus, signage, cards or truck lettering</option>
+            <option>Not sure yet &mdash; let's talk</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fieldrow">
+        <div class="field">
+          <label for="m-town">Where Are You?</label>
+          <input id="m-town" name="town" type="text" placeholder="Town and state — anywhere is fine">
+        </div>
+        <div class="field">
+          <label for="m-when">When Do You Need It?</label>
+          <select id="m-when" name="timeline">
+            <option>No rush</option>
+            <option>Next month or so</option>
+            <option>There's a date I have to hit</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="m-msg">Tell Me About It <span class="req">*</span></label>
+        <textarea id="m-msg" name="message" required placeholder="What you do, where people find you now, and anything you've already got — a Facebook page, an old site, a logo on the truck."></textarea>
+      </div>
+
+      <div class="formfoot">
+        <button class="btn btn-p" type="submit" id="m-send">Send It Over</button>
+        <span class="alt">Or email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a></span>
+      </div>
+
+      <div class="formmsg" id="m-msgbox" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <div class="callout" style="margin:34px 0 60px">
+    <div class="k">Here For The Overland Side Instead?</div>
+    <p style="margin:0">Brand partnerships, gear, trail events and collabs with GMxTARRANT
+    itself live on the <a href="work-with-us.html" style="color:var(--gold)">Work With Us</a>
+    page. If what you want is a site, a logo or merch built <em>for</em> your club, you're on
+    the right page already. Either form reaches the same inbox &mdash; it just keeps things
+    sorted.</p>
+  </div>
+
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fmark">
+      <img src="image/badge-mark.png" alt="">
+      <div>
+        <div class="fbrand">GM<span class="x">x</span>TARRANT</div>
+        <div class="ftag">Family Overland &middot; Jackson, Michigan</div>
+      </div>
+    </div>
+    <div class="frow">
+      <div>&copy; <span id="yr">2026</span> GMxTARRANT. All rights reserved.</div>
+      <div><a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> &nbsp;&middot;&nbsp;
+        <a href="index.html#shop">Shop</a> &nbsp;&middot;&nbsp; <a href="index.html#follow">Follow</a></div>
+    </div>
+
+    <div class="flegal">
+      <span>Cadence app</span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+<script>
+  var b=document.getElementById('menubtn'), l=document.getElementById('navlist');
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+  l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded','false');}});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+<script>
+  (function(){
+    var form=document.getElementById('mdForm');
+    if(!form) return;
+    var box=document.getElementById('m-msgbox'), send=document.getElementById('m-send');
+    var KEY=form.access_key.value, PH='PASTE_YOUR_WEB3FORMS_KEY_HERE';
+    function say(k,t){ box.className='formmsg '+k; box.innerHTML=t; }
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      if(KEY===PH){
+        say('bad','This form isn\'t hooked up yet. Please email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> directly and I\'ll get right back to you.');
+        return;
+      }
+      send.disabled=true; send.textContent='Sending...';
+      fetch('https://api.web3forms.com/submit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(Object.fromEntries(new FormData(form)))
+      }).then(function(r){return r.json();}).then(function(d){
+        if(d.success){ form.reset(); say('ok','Got it. I usually come back within a day or two — thanks for reaching out.'); }
+        else { say('bad','Something went wrong on my end. Please email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> instead.'); }
+      }).catch(function(){
+        say('bad','Couldn\'t send — check your connection, or email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> directly.');
+      }).finally(function(){ send.disabled=false; send.textContent='Send It Over'; });
+    });
+  })();
+</script>
+
+</body>
+</html>

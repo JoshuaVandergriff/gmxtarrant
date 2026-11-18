@@ -51,9 +51,11 @@
     <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="navlist">Menu</button>
     <ul id="navlist">
       <li><a href="trails/index.html">Trail Guides</a></li>
+      <li><a href="camping.html">Camping</a></li>
       <li><a href="gear.html">Gear</a></li>
-      <li><a href="events.html">Events</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="media-designs.html">Media + Designs</a></li>
+      <li><a href="work-with-us.html">Work With Us</a></li>
       <li><a href="#shop" class="navshop">Shop</a></li>
     </ul>
   </div>
@@ -105,10 +107,30 @@
       </div>
     </div>
 
-    <div class="portrait">
-      <img src="image/josh-kyla.jpg" alt="Josh and Kyla with the Bronco at the dunes">
-      <!-- [EDIT] Change this caption to wherever this photo was actually taken -->
-      <div class="cap">Josh &amp; Kyla · Silver Lake Sand Dunes</div>
+    <div>
+      <div class="portrait">
+        <img src="image/josh-kyla.jpg" alt="Josh and Kyla with the Bronco at the dunes">
+        <!-- [EDIT] Change this caption to wherever this photo was actually taken -->
+        <div class="cap">Josh &amp; Kyla · Silver Lake Sand Dunes</div>
+      </div>
+
+      <div class="bucket">
+        <h3>The Bucket List</h3>
+        <div class="lead">Trips we're saving for, planning around, and slowly working toward.</div>
+        <ul>
+          <li>Moab, Utah <span class="yr">2027?</span></li>
+          <li>Daniel Boone Backcountry Byway, TN <span class="yr">2027</span></li>
+          <li>Land Between the Lakes, KY <span class="yr">2027</span></li>
+          <li>Florida Adventure Trail <span class="yr">2028</span></li>
+          <li>Baja <span class="yr">2029</span></li>
+          <li>Georgia Traverse <span class="yr">TBD</span></li>
+        </ul>
+        <div class="join">Want to come along? We're genuinely serious &mdash; convoys are more
+        fun and safer than going alone.</div>
+        <!-- Opens the join popup. Falls back to the full contact page if JavaScript is off. -->
+        <a class="btn btn-p" id="joinOpen" href="work-with-us.html"
+           style="width:100%;text-align:center;margin-top:16px">Count Me In</a>
+      </div>
     </div>
   </div>
 </section>
@@ -135,7 +157,7 @@
     <div class="grid3" style="margin-top:0">
 
       <a class="card" href="trails/st-ignace.html">
-        <div class="thumb" style="background-image:url('image/trail-st-ignace.jpg')"><span class="ph">Add photo</span></div>
+        <div class="thumb" style="background-image:url('image/trail-st-ignace.jpg')"></div>
         <div class="body">
           <div class="tag">St. Ignace, MI · Easy–Intermediate</div>
           <h3>St. Ignace Area</h3>
@@ -144,7 +166,7 @@
       </a>
 
       <a class="card" href="trails/drummond-island.html">
-        <div class="thumb" style="background-image:url('image/trail-drummond-island.jpg')"><span class="ph">Add photo</span></div>
+        <div class="thumb" style="background-image:url('image/trail-drummond-island.jpg')"></div>
         <div class="body">
           <div class="tag">Drummond Island, MI · Intermediate–Advanced</div>
           <h3>Drummond Island</h3>
@@ -153,7 +175,7 @@
       </a>
 
       <a class="card" href="trails/west-branch.html">
-        <div class="thumb" style="background-image:url('image/trail-west-branch.jpg')"><span class="ph">Add photo</span></div>
+        <div class="thumb" style="background-image:url('image/trail-west-branch.jpg')"></div>
         <div class="body">
           <div class="tag">West Branch, MI · Beginner–Intermediate</div>
           <h3>West Branch Area</h3>
@@ -162,7 +184,7 @@
       </a>
 
       <a class="card" href="trails/silver-lake-sand-dunes.html">
-        <div class="thumb" style="background-image:url('image/trail-silver-lake-sand-dunes.jpg')"><span class="ph">Add photo</span></div>
+        <div class="thumb" style="background-image:url('image/trail-silver-lake-sand-dunes.jpg')"></div>
         <div class="body">
           <div class="tag">Mears, MI · Beginner–Advanced</div>
           <h3>Silver Lake Sand Dunes</h3>
@@ -175,6 +197,19 @@
     <div class="btnrow" style="justify-content:flex-start;margin-top:34px">
       <a href="trails/index.html" class="btn btn-p">All Trail Guides</a>
     </div>
+
+    <div class="invite" style="margin-top:40px">
+      <div class="eyebrow">Tell Us Where To Go</div>
+      <h2>Got A Spot Or An Event For Us?</h2>
+      <p>We're always looking for the next trail, the next campground, or the next run worth
+      driving to. Club runs, trail rides, campouts, meetups &mdash; if it's worth showing up to,
+      we want to hear about it. Same goes for anywhere you think we've been sleeping on.</p>
+      <div class="btnrow" style="justify-content:flex-start">
+        <a href="work-with-us.html" class="btn btn-p">Send Us A Spot Or Invite</a>
+        <a href="camping.html" class="btn btn-s">Where We Camp</a>
+      </div>
+    </div>
+
 
   </div>
 </section>
@@ -229,15 +264,15 @@
            (VIDEO_ID is the part after "v=" in the YouTube link) -->
       <div class="grid3">
         <a class="card" href="https://youtube.com/@GMxTarrant" target="_blank" rel="noopener">
-          <div class="thumb" style="background-image:url('')"><span class="ph">Latest video</span></div>
+          <div class="thumb" style="background-image:url('')"><span class="ph">GM&times;T</span></div>
           <div class="body"><div class="tag">Trail Guide</div><h3>New Videos Weekly</h3><p>Michigan trail guides, the trailer build, and honest gear reports.</p></div>
         </a>
         <a class="card" href="https://youtube.com/@GMxTarrant" target="_blank" rel="noopener">
-          <div class="thumb" style="background-image:url('')"><span class="ph">Latest video</span></div>
+          <div class="thumb" style="background-image:url('')"><span class="ph">GM&times;T</span></div>
           <div class="body"><div class="tag">Trailer Build</div><h3>Building the Adventure Trailer</h3><p>One weekend at a time, filmed start to finish.</p></div>
         </a>
         <a class="card" href="https://youtube.com/@GMxTarrant" target="_blank" rel="noopener">
-          <div class="thumb" style="background-image:url('')"><span class="ph">Latest video</span></div>
+          <div class="thumb" style="background-image:url('')"><span class="ph">GM&times;T</span></div>
           <div class="body"><div class="tag">Gear</div><h3>What We Actually Run</h3><p>Long-term reports on the gear that lives on our truck.</p></div>
         </a>
       </div>
@@ -268,27 +303,31 @@
     <div class="shopgrid">
 
       <div class="prod">
-        <div class="pic" style="background-image:url('')"><span class="ph">Add product photo<br>(wear it on the trail —<br>not a blank mockup)</span></div>
+        <div class="pic" style="background-image:url('')"><span class="ph">Photo Coming</span></div>
         <div class="body">
           <h3>Trail Patch Hat</h3>
           <div class="desc">Embroidered badge on a structured trucker. Adjustable snapback, one size. The one we actually wear.</div>
           <div class="price">$34 <span class="note">+ shipping</span></div>
-          <a class="btn btn-p" href="PASTE_STRIPE_LINK_HERE">Buy Now</a>
+          <!-- [EDIT] When this product has a Stripe Payment Link, replace this whole <span> with:
+               <a class="btn btn-p" href="PASTE_YOUR_STRIPE_LINK">Buy Now</a> -->
+          <span class="btn btn-off">Coming Soon</span>
         </div>
       </div>
 
       <div class="prod">
-        <div class="pic" style="background-image:url('')"><span class="ph">Add product photo</span></div>
+        <div class="pic" style="background-image:url('')"><span class="ph">Photo Coming</span></div>
         <div class="body">
           <h3>Michigan Trails Tee</h3>
           <div class="desc">The mitten built from trail names — Bundy Hill, Silver Lake, Drummond, The Mounds, St. Helen. Soft ring-spun cotton.</div>
           <div class="price">$28 <span class="note">+ shipping</span></div>
-          <a class="btn btn-p" href="PASTE_STRIPE_LINK_HERE">Buy Now</a>
+          <!-- [EDIT] When this product has a Stripe Payment Link, replace this whole <span> with:
+               <a class="btn btn-p" href="PASTE_YOUR_STRIPE_LINK">Buy Now</a> -->
+          <span class="btn btn-off">Coming Soon</span>
         </div>
       </div>
 
       <div class="prod">
-        <div class="pic" style="background-image:url('')"><span class="ph">Add product photo</span></div>
+        <div class="pic" style="background-image:url('')"><span class="ph">Photo Coming</span></div>
         <div class="body">
           <h3>DA_GRN_M4CHINE Tee</h3>
           <div class="desc">Small chest hit, truck silhouette, plate name. For the people who already know.</div>
@@ -374,16 +413,14 @@
         <span class="arrow" aria-hidden="true">→</span>
       </a>
 
-      <!-- Opens the contact form. The mailto is kept as a fallback for anyone
-           with JavaScript turned off, so this link always works either way. -->
-      <a class="lk" id="contactOpen" href="mailto:gmxtarrant@gmail.com">
+      <a class="lk" href="work-with-us.html">
         <span class="ico" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round">
             <rect x="2" y="4.5" width="20" height="15" rx="2.2"/>
             <path d="M2.8 6 12 13.2 21.2 6"/>
           </svg>
         </span>
-        <span class="tx"><span class="l">Work With Us</span><span class="h">Brand &amp; partnership inquiries</span></span>
+        <span class="tx"><span class="l">Work With Us</span><span class="h">Brands, collabs, events &amp; design work</span></span>
         <span class="arrow" aria-hidden="true">→</span>
       </a>
 
@@ -405,69 +442,69 @@
 </main>
 
 
-<!-- ================= CONTACT FORM ================= -->
-<!-- [EDIT] TURN THIS FORM ON — takes about 2 minutes, it's free.
-     1. Go to  web3forms.com
-     2. Type in  gmxtarrant@gmail.com  and hit create
-     3. They email you an "access key" that looks like  a1b2c3d4-1234-5678-90ab-cdef12345678
-     4. Replace the words  PASTE_YOUR_WEB3FORMS_KEY_HERE  below with that key
-     Messages then land in your Gmail. Your email address never appears on the page,
-     so spam bots can't scrape it. Until you paste the key, the form politely tells
-     people to email you directly instead of failing silently. -->
-<dialog class="contact" id="contactModal" aria-labelledby="contactTitle">
+
+
+<!-- ================= JOIN A TRIP POPUP ================= -->
+<!-- [EDIT] Uses the SAME Web3Forms key as the Work With Us page.
+     Paste it below over PASTE_YOUR_WEB3FORMS_KEY_HERE and both forms start working.
+     Until then this politely tells people to email instead of failing quietly. -->
+<dialog class="contact" id="joinModal" aria-labelledby="joinTitle">
   <div class="head">
-    <button class="x" id="contactClose" aria-label="Close">&times;</button>
-    <div class="k">Work With Us</div>
-    <h2 id="contactTitle">Get In Touch</h2>
-    <p>Brand partnerships, gear you'd like us to run, design work, or a club event — tell us what you have in mind.</p>
+    <button class="x" id="joinClose" aria-label="Close">&times;</button>
+    <div class="k">Bucket List</div>
+    <h2 id="joinTitle">Come With Us</h2>
+    <p>Pick a trip and tell us a bit about your setup. Nothing is locked in yet &mdash; we're
+    building a list of people who want in so we can plan around it.</p>
   </div>
 
-  <form id="contactForm" novalidate>
+  <form id="joinForm" novalidate>
     <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
-    <input type="hidden" name="subject" value="New inquiry from gmxtarrant.com">
-    <input type="hidden" name="from_name" value="GMxTARRANT Website">
-    <!-- spam trap: real people never see or fill this -->
+    <input type="hidden" name="subject" value="Bucket list trip interest — gmxtarrant.com">
+    <input type="hidden" name="from_name" value="GMxTARRANT Bucket List">
+    <input type="hidden" name="topic" value="Bucket list trip">
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
 
     <div class="fieldrow">
       <div class="field">
-        <label for="cf-name">Name <span class="req">*</span></label>
-        <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+        <label for="j-name">Name <span class="req">*</span></label>
+        <input id="j-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
       </div>
       <div class="field">
-        <label for="cf-email">Email <span class="req">*</span></label>
-        <input id="cf-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+        <label for="j-email">Email <span class="req">*</span></label>
+        <input id="j-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
       </div>
     </div>
 
     <div class="fieldrow">
       <div class="field">
-        <label for="cf-co">Company or Brand</label>
-        <input id="cf-co" name="company" type="text" placeholder="Optional">
+        <label for="j-trip">Which Trip?</label>
+        <select id="j-trip" name="trip">
+          <option>Any of them &mdash; keep me posted</option>
+          <option>Moab, Utah (2027?)</option>
+          <option>Daniel Boone Backcountry Byway, TN (2027)</option>
+          <option>Land Between the Lakes, KY (2027)</option>
+          <option>Florida Adventure Trail (2028)</option>
+          <option>Baja (2029)</option>
+          <option>Georgia Traverse (TBD)</option>
+        </select>
       </div>
       <div class="field">
-        <label for="cf-topic">What's This About?</label>
-        <select id="cf-topic" name="topic">
-          <option>Brand partnership</option>
-          <option>Product or gear</option>
-          <option>Design services</option>
-          <option>Club or event</option>
-          <option>Something else</option>
-        </select>
+        <label for="j-rig">What Do You Drive?</label>
+        <input id="j-rig" name="rig" type="text" placeholder="Optional — year, make, build">
       </div>
     </div>
 
     <div class="field">
-      <label for="cf-msg">Message <span class="req">*</span></label>
-      <textarea id="cf-msg" name="message" required placeholder="What are you thinking? The more detail the better."></textarea>
+      <label for="j-msg">Anything Else</label>
+      <textarea id="j-msg" name="message" placeholder="Kids along? Been there before? Rig still stock? Whatever's useful."></textarea>
     </div>
 
     <div class="formfoot">
-      <button class="btn btn-p" type="submit" id="cf-send">Send Message</button>
+      <button class="btn btn-p" type="submit" id="j-send">Count Me In</button>
       <span class="alt">Or email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a></span>
     </div>
 
-    <div class="formmsg" id="cf-msgbox" role="status" aria-live="polite"></div>
+    <div class="formmsg" id="j-msgbox" role="status" aria-live="polite"></div>
   </form>
 </dialog>
 
@@ -489,6 +526,15 @@
         &nbsp;·&nbsp; <a href="#shop">Shop</a> &nbsp;·&nbsp; <a href="#follow">Follow</a>
       </div>
     </div>
+
+    <div class="flegal">
+      <!-- [EDIT] These two pages belong to the Cadence app, not to this website.
+           They are labelled that way on purpose so nobody reads them as the
+           site's own policy. Leave the wording alone unless the app changes. -->
+      <span>Cadence app</span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
   </div>
 </footer>
 
@@ -502,6 +548,44 @@
     if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded','false');}
   });
   document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // ---- bucket list join popup ----
+  (function(){
+    var modal=document.getElementById('joinModal'), open=document.getElementById('joinOpen');
+    var close=document.getElementById('joinClose'), form=document.getElementById('joinForm');
+    if(!modal||!open||!form) return;
+    var box=document.getElementById('j-msgbox'), send=document.getElementById('j-send');
+    var KEY=form.access_key.value, PH='PASTE_YOUR_WEB3FORMS_KEY_HERE';
+    function say(k,t){ box.className='formmsg '+k; box.innerHTML=t; }
+
+    open.addEventListener('click',function(e){
+      if(typeof modal.showModal!=='function') return;   // no dialog support: let the link work
+      e.preventDefault(); box.className='formmsg'; modal.showModal();
+    });
+    close.addEventListener('click',function(){ modal.close(); });
+    modal.addEventListener('click',function(e){ if(e.target===modal) modal.close(); });
+
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+      if(KEY===PH){
+        say('bad','This form isn\'t hooked up yet. Email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> and tell us which trip — we\'ll add you to the list.');
+        return;
+      }
+      send.disabled=true; send.textContent='Sending...';
+      fetch('https://api.web3forms.com/submit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(Object.fromEntries(new FormData(form)))
+      }).then(function(r){return r.json();}).then(function(d){
+        if(d.success){ form.reset(); say('ok','You\'re on the list. We\'ll be in touch as these get closer — thanks for wanting to come.'); }
+        else { say('bad','Something went wrong on our end. Email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> instead.'); }
+      }).catch(function(){
+        say('bad','Couldn\'t send — check your connection, or email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> directly.');
+      }).finally(function(){ send.disabled=false; send.textContent='Count Me In'; });
+    });
+  })();
+
 
   // ---- pull the newest long-form videos from YouTube ----
   (function(){
@@ -571,57 +655,6 @@
   })();
 
 
-  // ---- contact form ----
-  (function(){
-    var modal=document.getElementById('contactModal');
-    var open=document.getElementById('contactOpen');
-    var close=document.getElementById('contactClose');
-    var form=document.getElementById('contactForm');
-    var box=document.getElementById('cf-msgbox');
-    var send=document.getElementById('cf-send');
-    if(!modal||!open||!form) return;
-    var KEY=form.access_key.value;
-    var PLACEHOLDER='PASTE_YOUR_WEB3FORMS_KEY_HERE';
-
-    function say(kind,text){ box.className='formmsg '+kind; box.innerHTML=text; }
-
-    open.addEventListener('click',function(e){
-      e.preventDefault();
-      box.className='formmsg';
-      if(typeof modal.showModal==='function'){ modal.showModal(); }
-      else { window.location.href=open.getAttribute('href'); }
-    });
-    close.addEventListener('click',function(){ modal.close(); });
-    modal.addEventListener('click',function(e){ if(e.target===modal) modal.close(); });
-
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      if(!form.checkValidity()){ form.reportValidity(); return; }
-      if(KEY===PLACEHOLDER){
-        say('bad','This form isn\'t hooked up yet. Please email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> directly and we\'ll get right back to you.');
-        return;
-      }
-      send.disabled=true; send.textContent='Sending...';
-      fetch('https://api.web3forms.com/submit',{
-        method:'POST',
-        headers:{'Content-Type':'application/json','Accept':'application/json'},
-        body:JSON.stringify(Object.fromEntries(new FormData(form)))
-      })
-      .then(function(r){ return r.json(); })
-      .then(function(d){
-        if(d.success){
-          form.reset();
-          say('ok','Message sent. We usually get back within a day or two \u2014 thanks for reaching out.');
-        } else {
-          say('bad','Something went wrong on our end. Please email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> instead.');
-        }
-      })
-      .catch(function(){
-        say('bad','Couldn\'t send \u2014 check your connection, or email <a href="mailto:gmxtarrant@gmail.com">gmxtarrant@gmail.com</a> directly.');
-      })
-      .finally(function(){ send.disabled=false; send.textContent='Send Message'; });
-    });
-  })();
 
 </script>
 
